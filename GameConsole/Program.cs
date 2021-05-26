@@ -10,15 +10,37 @@ namespace GameConsole
     {
         static void Main(string[] args)
         {
-            var player = new PlayerCharacter
+
+            //PlayerCharacter player = new PlayerCharacter();
+            //player.DaysSinceLastLogin = 42;
+            ////var player = new PlayerCharacter
+            ////{
+            ////    Name = ""
+            ////    //,DaysSinceLastLogin = 42
+            ////};
+
+
+            ////PlayerDisplayer.Write(player);
+
+            ////int days = player.DaysSinceLastLogin.Value;
+            //int days = player?.DaysSinceLastLogin?? -1;
+
+            //Console.WriteLine(days);
+
+            #region Using the Null Conditional Operator
+            PlayerCharacter[] players = new PlayerCharacter[3]
             {
-                Name = ""
-                //,DaysSinceLastLogin = 42
+                new PlayerCharacter{ Name = "Tammy"}
+                ,new PlayerCharacter()
+                ,null
             };
 
+            string p1 = players?[0]?.Name;
+            string p2 = players?[1]?.Name;
+            string p3 = players?[2]?.Name;
+            #endregion
 
-            PlayerDisplayer.Write(player);
-            
+
         }
     }
 }
