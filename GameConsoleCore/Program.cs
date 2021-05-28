@@ -10,6 +10,7 @@ namespace GameConsoleCore
             {
                 new PlayerCharacter("Sarah"),
                 new PlayerCharacter("Gentry"),
+               // new PlayerCharacter(null),
                 null
             };
 
