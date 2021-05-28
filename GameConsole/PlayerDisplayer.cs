@@ -25,11 +25,11 @@ namespace GameConsole
             //int days = player.DaysSinceLastLogin.HasValue ? player.DaysSinceLastLogin.Value : -1;
 
             // Null Coalescing operator
-            int days = player.DaysSinceLastLogin ?? -1;
+            //int days = player.DaysSinceLastLogin ?? -1;
 
             /// Using null conditional 
 
-            Console.WriteLine($"{days} days since last login");
+            //Console.WriteLine($"{days} days since last login");
 
             //if (player.DaysSinceLastLogin.HasValue)
             //{
@@ -41,28 +41,28 @@ namespace GameConsole
             //    Console.WriteLine("No value for DaysSinceLastLogin");
             //}
 
-            if (player.DateOfBirth == null)
-            {
-                Console.WriteLine("No date of birth specified");
-            }
-            else
-            {
-                Console.WriteLine(player.DateOfBirth);
-            }
+            //if (player.DateOfBirth == null)
+            //{
+            //    Console.WriteLine("No date of birth specified");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(player.DateOfBirth);
+            //}
 
 
-            if (player.IsNoob == null)
-            {
-                Console.WriteLine("Player newbie status is unknown");
-            }
-            else if(player.IsNoob == true)
-            {
-                Console.WriteLine("Player is newbie");
-            }
-            else
-            {
-                Console.WriteLine("Player is experienced");
-            }
+            //if (player.IsNoob == null)
+            //{
+            //    Console.WriteLine("Player newbie status is unknown");
+            //}
+            //else if(player.IsNoob == true)
+            //{
+            //    Console.WriteLine("Player is newbie");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Player is experienced");
+            //}
         }
     }
 }
